@@ -7,7 +7,6 @@ const methodOverride = require('method-override');
 const jwt = require('jsonwebtoken');
 const cookieParser = require('cookie-parser')
 
-
 const app = express();
 const port = 3000;
 

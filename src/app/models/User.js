@@ -5,8 +5,8 @@ const ObjectId = Schema.ObjectId;
 
 const User = new Schema({
     username: { type: String, require: true, unique: true },
-    password: { type: String, require: true, unique: true },
-    role: { type: String, require: true, default:'user'}
+    password: { type: String, require: true},
+    role: { type: String, default:'user'}
 },{
     timestamps: true,
 });
