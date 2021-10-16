@@ -28,14 +28,14 @@
 				{{#when type 'eq' 'breakfast'}}
 				<a href="/products/{{this.slug}}">
             	<div class="menus d-flex ftco-animate">
-                <div class="menu-img img" style="background-image: url({{image}});"></div>
+                <div class="menu-img img" style="background-image: url(images/{{image}});"></div>
                 <div class="text">
               		<div class="d-flex">
 	                	<div class="one-half">
 	                  		<h3>{{name}}</h3>
 	               		 </div>
 	                	<div class="one-forth">
-	                  		<span class="price">${{pride}}</span>
+	                  		<span class="price">{{pride}}K</span>
 	                	</div>
 	                </div>
 	                <p>{{description}}</p>
@@ -55,17 +55,17 @@
 			{{#when type 'eq' 'lunch'}}
 			<a href="/products/{{this.slug}}">
             <div class="menus d-flex ftco-animate">
-              <div class="menu-img img" style="background-image: url({{image}});"></div>
+              <div class="menu-img img" style="background-image: url(images/{{image}});"></div>
               <div class="text">
               	<div class="d-flex">
 	                <div class="one-half">
 	                  <h3>{{name}}</h3>
 	                </div>
 	                <div class="one-forth">
-	                  <span class="price">${{pride}}</span>
+	                  <span class="price">{{pride}}K</span>
 	                </div>
 	              </div>
-	              <p>{{discription}}</p>
+	              <p>{{description}}</p>
               </div>
             </div>
 			</a>
@@ -81,14 +81,14 @@
 				{{#when type 'eq' 'dinner'}}
 				<a href="/products/{{this.slug}}">
 				<div class="menus d-flex ftco-animate">
-					<div class="menu-img img" style="background-image: url(images/dinner-3.jpg);"></div>
+					<div class="menu-img img" style="background-image: url(images/{{image}});"></div>
 					<div class="text">
 						<div class="d-flex">
 							<div class="one-half">
 								<h3>{{name}}</h3>
 							</div>
 							<div class="one-forth">
-								<span class="price">${{pride}}</span>
+								<span class="price">{{pride}}K</span>
 							</div>
 						</div>
 						<p>{{description}}</p>
@@ -105,21 +105,23 @@
         			<h3>Desserts</h3>
         		</div>
 				{{#menu}}
-				{{#when type 'eq' 'desserts'}} 
+				{{#when type 'eq' 'dessert'}}
+				<a href="/products/{{this.slug}}">
 				<div class="menus d-flex ftco-animate">
-					<div class="menu-img img" style="background-image: url(images/dessert-2.jpg);"></div>
+					<div class="menu-img img" style="background-image: url(images/{{image}});"></div>
 					<div class="text">
 						<div class="d-flex">
 							<div class="one-half">
 								<h3>{{name}}</h3>
 							</div>
 							<div class="one-forth">
-								<span class="price">${{pride}}</span>
+								<span class="price">{{pride}}K</span>
 							</div>
 						</div>
 						<p>{{description}}</p>
 					</div>
 				</div>
+				</a>
 				{{/when}}
 			    {{/menu}}
         	</div>
@@ -129,17 +131,17 @@
         			<h3>Wine Card</h3>
         		</div>
 				{{#menu}}
-				{{#when type 'eq' 'wine card'}} 
-				<a href="">
+				{{#when type 'eq' 'wine'}} 
+				<a href="/products/{{this.slug}}">
 					<div class="menus d-flex ftco-animate">
-						<div class="menu-img img" style="background-image: url(images/wine-3.jpg);"></div>
+						<div class="menu-img img" style="background-image: url(images/{{image}});"></div>
 						<div class="text">
 							<div class="d-flex">
 								<div class="one-half">
 									<h3>{{name}}</h3>
 								</div>
 								<div class="one-forth">
-									<span class="price">${{pride}}</span>
+									<span class="price">{{pride}}K</span>
 								</div>
 							</div>
 							<p>{{description}}</p>
@@ -156,21 +158,23 @@
         			<h3>Drinks</h3>
         		</div>
 			{{#menu}}
-			{{#when type 'eq' 'drinks'}} 
+			{{#when type 'eq' 'drink'}} 
+			<a href="/products/{{this.slug}}">
             <div class="menus d-flex ftco-animate">
-              <div class="menu-img img" style="background-image: url(images/drink-3.jpg);"></div>
+              <div class="menu-img img" style="background-image: url(images/{{image}});"></div>
               <div class="text">
               	 <div class="d-flex">
 	                <div class="one-half">
 	                  <h3>{{name}}</h3>
 	                </div>
 	                <div class="one-forth">
-	                  <span class="price">${{pride}}</span>
+	                  <span class="price">{{pride}}K</span>
 	                </div>
 	              </div>
 	              <p>{{description}}</p>
               </div>
             </div>
+			</a>
 			{{/when}}
 			{{/menu}}
         </div>

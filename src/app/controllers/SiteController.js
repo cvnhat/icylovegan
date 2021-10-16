@@ -4,8 +4,8 @@ const Customer=require("../models/Customer")
 
 class SiteController {
     home(req, res, next) {
-        Promise.all([Menu.find({}).lean(), home, Customer.find().limit(5).lean()])
-            .then(([menu, home, customer]) => res.render('site/home', {menu, home, customer}))
+        Promise.all([Menu.find().limit(3).skip(4).lean(),home, Customer.find().limit(5).lean()])
+            .then(([menu, home, customer]) => res.render('site/home', {menu,home, customer}))
             .catch(next);
     }
     blog(req, res, next) {

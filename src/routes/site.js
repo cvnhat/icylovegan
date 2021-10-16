@@ -16,6 +16,7 @@ router.post('/login', adminController.log);
 ///////////////////////////////////////
 router.get('/blog-single', siteController.blogSingle);
 router.get('/reservation', siteController.reservation);
+router.post('/reservation', bookController.makeABook);
 router.get('/blog', siteController.blog);
 router.get('/menu', siteController.menu);
 router.get('/admin',adminController.check ,siteController.admin);
